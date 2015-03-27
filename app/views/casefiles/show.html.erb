@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Client:</strong>
+  <%= @casefile.client %>
+</p>
+
+<p>
+  <strong>Matter:</strong>
+  <%= @casefile.matter %>
+</p>
+
+<p>
+  <strong>File number:</strong>
+  <%= @casefile.file_number %>
+</p>
+
+<p>
+  <strong>Date opened:</strong>
+  <%= @casefile.date_opened %>
+</p>
+
+<p>
+  <strong>Date closed:</strong>
+  <%= @casefile.date_closed %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @casefile.location %>
+</p>
+
+<%= link_to 'Edit', edit_casefile_path(@casefile) %> |
+<%= link_to 'Back', casefiles_path %>

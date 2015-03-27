@@ -1,0 +1,72 @@
+<div class="jumbotron">
+  <h1>Sup, bitch?</h1>
+  <p>This is the Employee Toolkit (ETK).</p>
+</div>
+
+<div class="panel panel-info">
+<div class="panel-heading">
+  <h3 class="panel-title">Case Management System</h3>
+  </div>
+  <div class="panel-body">
+    <p>
+      View and edit the case file database. 
+    </p>
+    <p>
+      <%= link_to "Add Case", new_casefile_path, class: "btn btn-primary btn-xs" %>
+      
+  </div>
+</div>
+
+<div class="panel panel-info">
+<div class="panel-heading">
+  <h3 class="panel-title">Client Management System</h3>
+  </div>
+  <div class="panel-body">
+    <p>
+      View and edit the client database. 
+    </p>
+    <p>
+      
+  </div>
+</div>
+
+
+<div class="panel panel-info">
+  <div class="panel-heading">
+    <h3 class="panel-title">Example Models</h3>
+  </div>
+  <div class="panel-body">
+    <p>
+      We've provided a few sample resources so you can play around and
+      explore some rails code.
+    </p>
+    <p>
+      First, there's a very
+      simple <code>User</code> model.
+      Why not go <%= link_to "Create a User", new_user_path, class:
+      "btn btn-primary btn-xs" %> first,
+      if you haven't done so already.
+    </p>
+    <p>
+      Next, we created a <code>Task</code> resource to represent an
+      item in a todo list.
+    </p>
+    <%= link_to "See Tasks", clients_path, class: "btn btn-primary" %>
+  </div>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Resources</h3>
+  </div>
+  <div class="panel-body">
+    <ul>
+      <li><%= link_to "Bootstrap Components Reference",
+      "http://getbootstrap.com/components" %></li>
+      <li><%= link_to "Bootstrap CSS Reference",
+      "http://getbootstrap.com/css" %></li>
+      <li><%= link_to "This code on GitHub",
+      "https://github.com/rails-school/sample" %></li>
+    </ul>
+  </div>
+</div>
