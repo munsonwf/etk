@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  for: MyString
+  date: 2015-03-26 23:34:19
+  time: 2015-03-26 23:34:19
+  caller_name: MyString
+  caller_of: MyString
+  phone_number: MyString
+  phone_message: MyString
+  call_taker: MyString
+
+two:
+  for: MyString
+  date: 2015-03-26 23:34:19
+  time: 2015-03-26 23:34:19
+  caller_name: MyString
+  caller_of: MyString
+  phone_number: MyString
+  phone_message: MyString
+  call_taker: MyString

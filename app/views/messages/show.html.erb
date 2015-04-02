@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>For:</strong>
+  <%= @message.for %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @message.date %>
+</p>
+
+<p>
+  <strong>Time:</strong>
+  <%= @message.time %>
+</p>
+
+<p>
+  <strong>Caller name:</strong>
+  <%= @message.caller_name %>
+</p>
+
+<p>
+  <strong>Caller of:</strong>
+  <%= @message.caller_of %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @message.phone_number %>
+</p>
+
+<p>
+  <strong>Phone message:</strong>
+  <%= @message.phone_message %>
+</p>
+
+<p>
+  <strong>Call taker:</strong>
+  <%= @message.call_taker %>
+</p>
+
+<%= link_to 'Edit', edit_message_path(@message) %> |
+<%= link_to 'Back', messages_path %>

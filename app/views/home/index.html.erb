@@ -1,5 +1,5 @@
 <div class="jumbotron">
-  <h1>Sup, bitch?</h1>
+  <h1>Welcome.</h1>
   <p>This is the Employee Toolkit (ETK).</p>
 </div>
 
@@ -12,8 +12,9 @@
       View and edit the case file database. 
     </p>
     <p>
-      <%= link_to "Add Case", new_casefile_path, class: "btn btn-primary btn-xs" %>
-      
+      <%= link_to "Add Case", new_casefile_path, class: "btn btn-primary" %>
+
+      <%= link_to "View Case Files", casefiles_path, class: "btn btn-primary"%>      
   </div>
 </div>
 
@@ -26,6 +27,8 @@
       View and edit the client database. 
     </p>
     <p>
+    <%= link_to "Add Client", new_client_path, class: "btn btn-primary" %>
+    <%= link_to "View Client List", clients_path, class: "btn btn-primary" %>
       
   </div>
 </div>

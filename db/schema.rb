@@ -11,13 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150326225603) do
+ActiveRecord::Schema.define(version: 20150327041705) do
 
   create_table "casefiles", force: :cascade do |t|
     t.string   "client"
     t.string   "matter"
     t.string   "file_number"
-    t.datetime "date_opened"
+    t.date     "date_opened"
     t.datetime "date_closed"
     t.string   "location"
     t.datetime "created_at",  null: false
@@ -36,6 +36,19 @@ ActiveRecord::Schema.define(version: 20150326225603) do
     t.string   "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "messages", force: :cascade do |t|
+    t.string   "for"
+    t.datetime "date"
+    t.datetime "time"
+    t.string   "caller_name"
+    t.string   "caller_of"
+    t.string   "phone_number"
+    t.string   "phone_message"
+    t.string   "call_taker"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
   end
 
   create_table "tasks", force: :cascade do |t|

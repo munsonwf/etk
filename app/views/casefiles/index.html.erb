@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Casefiles</h1>
+<h1>List of Case Files</h1>
 
-<table>
+<p>Use CTRL+F to search for a file.</p>
+
+<table class="table">
   <thead>
     <tr>
       <th>Client</th>
@@ -27,6 +29,7 @@
         <td><%= link_to 'Show', casefile %></td>
         <td><%= link_to 'Edit', edit_casefile_path(casefile) %></td>
         <td><%= link_to 'Destroy', casefile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'close', close_casefile_path(casefile) %></td>
       </tr>
     <% end %>
   </tbody>
